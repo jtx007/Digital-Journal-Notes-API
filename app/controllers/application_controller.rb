@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::API
 require 'json_web_token'
         def not_found
-            render json: { error: 'not_found' }
+            render json: { error: 'User not found/Invalid Token' }
         end
 
     def authorize_request
