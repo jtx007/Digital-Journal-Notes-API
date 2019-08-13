@@ -9,6 +9,7 @@ module Api
 
             def create
                 entry = Entry.new(entry_params)
+                
                 if entry.save
                     render json: entry, status: :created
                 else
