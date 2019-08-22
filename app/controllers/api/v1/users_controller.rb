@@ -3,7 +3,9 @@ module Api
         class UsersController < ApplicationController
             
 
-
+            def ping
+                render json: {message: "I'm awake"}
+            end 
 
             def create
                 user = User.new(user_params)
