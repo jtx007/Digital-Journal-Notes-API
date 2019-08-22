@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
     namespace :api do
       namespace :v1 do
+        get '/users/ping', to: 'users#ping'
         resources :entries
         resources :users
-        get '/users/ping', to: 'users#ping'
         
       end
     end
